@@ -1,4 +1,6 @@
 .landing-button {
+    position: absolute;
+    z-index: 1;
     padding: 0.1em 0.25em;
     width: 13em;
     height: 4.2em;
@@ -33,9 +35,6 @@
 
 .landing-button span:not(hover) {
     transition: all 1s;
-}
-.landing-btn-bg{
-    background-color: #212121;
 }
 .home-bg{
     background-color: #212121;
