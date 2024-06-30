@@ -1,6 +1,6 @@
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import LandingButton from './components/LandingButton';
+import LandingButton from './page/LandingButton';
 function App() {
 
   return (
