@@ -21,7 +21,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #fffdfd;
+    background-color: #f93d09;
     animation: expandCircle 1s forwards;
 }
 
@@ -31,7 +31,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #fffdfd;
+    background-color: #f93d09;
     cursor: none;
 }
 

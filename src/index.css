@@ -1,0 +1,36 @@
+p{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+a, a:visited, a:hover, a:active{
+  text-decoration: none !important;
+  color: inherit;
+}
+@font-face {
+  font-family: 'guntertest';
+  src: url('../public/fonts/guntertest-regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+.guntertest-font{
+  font-family: 'guntertest', sans-serif;
+}
+
+.urbanist{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.urbanist-light{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+.urbanist-heavy{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
