@@ -52,7 +52,7 @@ const Experience: React.FC = () => {
       position: 'right',
       children: (
         <>
-          <p className='fw-bolder'>Intern</p>
+          <p className='fw-bolder'>MEARN Intern</p>
           <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://www.luminartechnolab.com/'>Luminar Technolab</a> · Full-time</p>
           <p style={{ fontSize: '12px' }}>Jun 2023 - Dec 2023 · 7 mos</p>
           <p style={{ fontSize: '12px' }}>Ernakulam, Kerala, India · Remote</p>

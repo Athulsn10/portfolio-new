@@ -4,9 +4,9 @@ import LandingButton from './page/LandingButton';
 function App() {
 
   return (
-   <>
-   <LandingButton/>
-   </>
+    <>
+      <LandingButton />
+    </>
   )
 }
 
