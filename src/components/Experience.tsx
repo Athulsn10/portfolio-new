@@ -63,7 +63,7 @@ const Experience: React.FC = () => {
 
   return (
     <>
-      <p className='guntertest-font fs-3 text-light'>EXPERIENCE</p>
+      <p className='guntertest-font fs-3 text-light ms-2'>EXPERIENCE</p>
       <div className='py-1' style={{ overflowY: 'scroll', height: '250px', overflowX: 'hidden' }}>
         <Timeline
           style={{ color: '#fff' }}

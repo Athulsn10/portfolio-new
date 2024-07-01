@@ -25,7 +25,7 @@ function Home() {
           </div>
         </div>
         <div className="row mt-3">
-          <div className="col-lg-7 col-md-6 col-sm-12 py-4" style={{height:'330px'}}><Experience/></div>
+          <div className="col-lg-7 col-md-6 col-sm-12 py-4 p-0 pe-1" style={{height:'330px'}}><Experience/></div>
           <div className="col-lg-5 col-md-6 col-sm-12 rounded-5 bg-light">
            <Skills/>
           </div>
