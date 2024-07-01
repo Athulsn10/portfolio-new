@@ -6,6 +6,7 @@ import Skills from "../components/Skills"
 import Socials from "../components/Socials"
 
 function Home() {
+
   return (
     <>
       <div className="home-bg p-3">
