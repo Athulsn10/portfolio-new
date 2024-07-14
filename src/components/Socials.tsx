@@ -18,7 +18,7 @@ function Socials() {
       }, []); 
       
       const handleDownload = () => {
-        var pdfPath = '/resume/resume.pdf';
+        var pdfPath = '/resume/Resume.pdf';
         var downloadLink = document.createElement('a');
         downloadLink.download = 'Athul-resume.pdf'; 
         downloadLink.href = pdfPath; 
