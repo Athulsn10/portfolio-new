@@ -18,9 +18,9 @@ function Socials() {
       }, []); 
       
       const handleDownload = () => {
-        var pdfPath = '/resume/Resume.pdf';
+        var pdfPath = '/resume/ATHUL S NAIR _RESUME.pdf';
         var downloadLink = document.createElement('a');
-        downloadLink.download = 'Athul-resume.pdf'; 
+        downloadLink.download = 'ATHUL S NAIR _RESUME.pdf'; 
         downloadLink.href = pdfPath; 
         document.body.appendChild(downloadLink);
         downloadLink.click();
