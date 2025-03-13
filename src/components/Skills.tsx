@@ -14,7 +14,7 @@ function Skills() {
                     <div className="col-6">
                         <p><i className="fi fi-brands-typescript"></i> TypeScript</p>
                         <p><i className="fa-brands fa-js"></i> JavaScript</p>
-                        <p><i className="fa-brands fa-node-js"></i> Node</p>
+                        <p><i className="fa-brands fa-node-js"></i> Express.js</p>
                     </div>
                 </div>
             </div>
