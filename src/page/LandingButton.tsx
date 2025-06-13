@@ -24,10 +24,6 @@ function LandingButton() {
     }, 400);
   };
 
-  const handleShow = () => {
-    setShowCircle(!showCircle);
-  };
-
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     setMousePosition({ x: e.clientX, y: e.clientY });
 
