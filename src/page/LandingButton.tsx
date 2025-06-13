@@ -11,7 +11,6 @@ function LandingButton() {
   const navigate = useNavigate();
   const [animate, setAnimate] = useState<boolean>(false);
   const [mousePosition, setMousePosition] = useState<MousePosition>({ x: 0, y: 0 });
-  const [showCircle, setShowCircle] = useState<boolean>(true);
   const [cursorColor, setCursorColor] = useState<string>('#ffffff80');
   const [cursorSize, setCursorSize] = useState<number>(100);
   const buttonRef = useRef<HTMLButtonElement>(null);
@@ -68,7 +67,6 @@ function LandingButton() {
           <span>Click Me</span>
         </button>
         {animate && <div className="circle"></div>}
-        {showCircle && (
           <div
             className="torch"
             style={{
@@ -78,9 +76,7 @@ function LandingButton() {
               backgroundColor: cursorColor,
               width: `${cursorSize}px`,
               height: `${cursorSize}px`,
-            }}
-          ></div>
-        )}
+            }}></div>
       </div>
     </div>
   );
