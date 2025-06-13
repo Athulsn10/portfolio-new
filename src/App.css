@@ -11,6 +11,36 @@
     cursor: pointer;
 }
 
+.home-custom-cursor {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #f93d09;
+  cursor: none;
+  transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.home-custom-cursor.invert {
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  backdrop-filter: invert(1);
+  opacity: 1;
+}
+
+.card:hover{
+    border-radius: 45px !important;
+    border:none !important;
+}
+.card:hover img {
+    border-radius: 45px 45px 0px 0px !important;
+    border:none !important;
+}
+
+.card:hover .card-title {
+    color: #f93d09 !important;
+}
 .landing-button span {
     position: relative;
     display: flex;
