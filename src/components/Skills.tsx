@@ -3,10 +3,12 @@ function Skills() {
     return (
         <>
             <div className="p-3 d-flex flex-column justify-content-center h-100">
-                <p className="guntertest-font fs-1">SKILLS</p>
+                <div className="d-flex justify-content-start align-items-center">
+                    <p className="guntertest-font fs-1 invert-cursor">SKILLS</p>
+                </div>
                 <hr className="m-0 mb-2" />
-                <div className="row fs-5 urbanist">
-                    <div className="col-6">
+                <div className="row fs-5 urbanist  invert-cursor">
+                    <div className="col-6 ">
                         <p><i className="fa-brands fa-react"></i> React</p>
                         <p><i className="fa-brands fa-angular"></i> Angular</p>
                         <p><i className="fa-brands fa-vuejs"></i> Vue js</p>

@@ -59,8 +59,10 @@ export default function Projects() {
   }, []);
   return (
     <>
-      <p className="guntertest-font fs-2 text-center text-light">PROJECTS</p>
-      <div className="w-100">
+      <div className="d-flex justify-content-center align-items-center">
+        <p className="guntertest-font fs-2 text-light invert-cursor">PROJECTS</p>
+      </div>
+      <div className="w-100 invert-cursor">
         {projectData.length != 0 ? (
           <div
             className="d-flex"
@@ -76,7 +78,7 @@ export default function Projects() {
                 style={{ width: "300px", flex: "0 0 auto" }}
                 key={item.id}
               >
-                <div className="card h-100 bg-light">
+                <div className="card h-100 bg-light border-0">
                   <img
                     src={item.screenshot}
                     className="img-fluid card-img-top"
@@ -94,6 +96,7 @@ export default function Projects() {
                       style={{ textDecoration: "none", color: "#ffffff" }}
                     >
                       <button
+                       style={{ cursor:"none" }}
                         type="button"
                         className="rounded-pill w-100 d-flex justify-content-center align-items-center btn btn-dark"
                       >

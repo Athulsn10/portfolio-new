@@ -63,9 +63,10 @@ const Experience: React.FC = () => {
 
   return (
     <>
-      <p className='guntertest-font fs-3 text-light ms-2'>EXPERIENCE</p>
+      <div className='d-flex justify-content-start align-items-center'><p className='guntertest-font fs-3 text-light ms-2 invert-cursor'>EXPERIENCE</p></div>
       <div className='py-1' style={{ overflowY: 'scroll', height: '250px', overflowX: 'hidden' }}>
         <Timeline
+          className='invert-cursor'
           style={{ color: '#fff' }}
           mode="alternate"
           items={items}
