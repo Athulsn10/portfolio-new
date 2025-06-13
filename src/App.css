@@ -8,7 +8,7 @@
     border: 0.08em solid #f5d938;
     border-radius: 0.3em;
     font-size: 12px;
-    cursor: pointer;
+    cursor: none;
 }
 
 .home-custom-cursor {
@@ -41,6 +41,11 @@
 .card:hover .card-title {
     color: #f93d09 !important;
 }
+
+a {
+    cursor: none !important;
+}
+
 .landing-button span {
     position: relative;
     display: flex;
