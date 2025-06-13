@@ -1,48 +1,46 @@
 .circle-container {
-    position: relative;
-    overflow: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
 .landing-btn-bg {
-    background-color: #212121;
+  background-color: #212121;
 }
 
 .circle-container {
-    background-color: #212121;
-    cursor: none;
+  background-color: #212121;
+  cursor: none;
 }
 
 .circle {
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #f93d09;
-    animation: expandCircle 1s forwards;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #f93d09;
+  animation: expandCircle 1s forwards;
 }
 
 .torch {
-    position: absolute;
-    z-index: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background-color: #f93d09;
-    cursor: none;
+  position: absolute;
+  z-index: 1000;
+  border-radius: 50%;
+  background-color: #ffffff80; /* Default color */
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease; /* Smooth color and size transition */
+  cursor: none;
 }
 
 @keyframes expandCircle {
-    0% {
-        transform: translate(-50%, -50%) scale(0);
-        opacity: 1;
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(30);
-        opacity: 1;
-    }
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(30);
+    opacity: 1;
+  }
 }
