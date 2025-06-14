@@ -22,10 +22,6 @@ function Home() {
     setIsInverted(isOverInvertElement);
   };
 
-  // Define cursor sizes
-  const cursorSize = isInverted ? 60 : 30;
-  const offset = cursorSize / 2;
-
   return (
     <>
       <div
@@ -87,9 +83,8 @@ function Home() {
         <div
           className={`home-custom-cursor ${isInverted ? "invert" : ""}`}
           style={{
-            top: `${mousePosition.y - offset}px`,
-            left: `${mousePosition.x - offset}px`,
-            pointerEvents: "none",
+            top: `${mousePosition.y}px`,
+            left: `${mousePosition.x}px`,
           }}
         ></div>
       </div>
