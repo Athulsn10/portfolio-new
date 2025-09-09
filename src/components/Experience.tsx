@@ -16,7 +16,12 @@ const Experience: React.FC = () => {
     const totalMonthsCurrent = currentYear * 12 + currentMonth;
     const totalMonthsInput = inputYear * 12 + inputMonth;
     const monthsSinceInput = totalMonthsCurrent - totalMonthsInput;
-    return monthsSinceInput.toString();
+    if (monthsSinceInput > 12) {
+      const years = Math.floor(monthsSinceInput/12);
+      const months = monthsSinceInput % 12;
+      return months > 0 ? `${years} yr ${months} mos` : `${years} yrs`  
+    }
+    return `${monthsSinceInput} mos`;
   };
 
   useEffect(() => {
@@ -31,8 +36,8 @@ const Experience: React.FC = () => {
       children: (
         <>
           <p className='fw-bolder'>Software Engineer</p>
-          <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://www.assyst.net/'>Assyst International</a> · Full-time</p>
-          <p style={{ fontSize: '12px' }}>Mar 2024 - present · {totalMonth} mos</p>
+          <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://panapps.co/'>Panapps  International Pvt Ltd</a> · Full-time</p>
+          <p style={{ fontSize: '12px' }}>Mar 2024 - present · {totalMonth}</p>
           <p style={{ fontSize: '12px' }}>Kochi, Kerala, India · Remote</p>
         </>
       ),
@@ -42,7 +47,7 @@ const Experience: React.FC = () => {
       children: (
         <>
           <p className='fw-bolder'>Software Engineer Intern</p>
-          <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://www.assyst.net/'>Assyst International</a> · Full-time</p>
+          <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://panapps.co/'>Panapps  International Pvt Ltd</a> · Full-time</p>
           <p style={{ fontSize: '12px' }}>Jan 2024 - Mar 2024 · 3 mos</p>
           <p style={{ fontSize: '12px' }}>Kochi, Kerala, India · Remote</p>
         </>
