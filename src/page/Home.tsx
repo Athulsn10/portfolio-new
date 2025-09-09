@@ -16,10 +16,20 @@ function Home() {
   const [isInverted, setIsInverted] = useState(false);
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
-    setMousePosition({ x: e.clientX, y: e.clientY + window.scrollY });
+    // Use clientX and clientY for viewport-relative positioning
+    setMousePosition({ x: e.clientX, y: e.clientY });
     const target = e.target as HTMLElement;
     const isOverInvertElement = target.closest(".invert-cursor") !== null;
     setIsInverted(isOverInvertElement);
+  };
+
+  // Hide cursor when mouse leaves the window
+  const handleMouseLeave = () => {
+    setMousePosition({ x: -100, y: -100 }); // Move cursor off-screen
+  };
+
+  const handleMouseEnter = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
+    setMousePosition({ x: e.clientX, y: e.clientY });
   };
 
   return (
@@ -27,6 +37,8 @@ function Home() {
       <div
         className="vh-100"
         onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        onMouseEnter={handleMouseEnter}
         style={{ cursor: "none", position: "relative", minHeight: "100vh" }}
       >
         <div className="home-bg p-3">
@@ -83,8 +95,11 @@ function Home() {
         <div
           className={`home-custom-cursor ${isInverted ? "invert" : ""}`}
           style={{
+            position: "fixed",
             top: `${mousePosition.y}px`,
             left: `${mousePosition.x}px`,
+            pointerEvents: "none",
+            zIndex: 9999,
           }}
         ></div>
       </div>
