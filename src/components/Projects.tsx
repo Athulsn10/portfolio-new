@@ -1,62 +1,59 @@
-import { useEffect } from "react";
 export default function Projects() {
-    const projectData = [
-        {
-          projectName: "Teachify",
-          description:
-            "MEAN Stack project where students of BSc CS under calicut university can access their notes",
-          liveUrl: "https://teachify-swart.vercel.app/",
-          screenshot:"/projectImage/teachify.png",
-          techStack: [["AngularJS", "NodeJS", "ExpressJS", "MongoDB"]],
-        },
-        {
-          projectName: "Chatify",
-          description:
-            "MERN Stack Chat Application utilizing Socket.IO for real time communication using websockets ",
-          liveUrl: "https://chatify-brown.vercel.app/",
-          screenshot: "/projectImage/chatify.png",
-          techStack: [["NodeJS", "ExpressJS", "MongoDB", "ReactJS", "Socket.io"]],
-        },
-        {
-          projectName: "Enigma Doc App",
-          description:
-            "React App for performing CRUD operations with Google's Firebase",
-          liveUrl: "https://enigma-doc-app.vercel.app/",
-          screenshot: "/projectImage/enigma.png",
-          techStack: [["ReactJS", "Firebase"]],
-        },
-        {
-          projectName: "Contact Manger",
-          description: "React App for CRUD operations with JSON Server",
-          liveUrl: "https://contact-manager-crud.vercel.app/",
-          screenshot:"/projectImage/contact-manager.png",
-          techStack: [["ReactJS", "JSON Server"]],
-        },
-        {
-          projectName: "Netflix Clone",
-          description: "Clone App of Netflix created using React",
-          liveUrl: "https://netflix-clone-reactjs-athul.netlify.app/",
-          screenshot: "/projectImage/netflix.png",
-          techStack: [["ReactJS", "RUST API", "AXIOS"]],
-        },
-        {
-          projectName: "Google Translate Clone",
-          description: "Google Translate clone using LibreTranslate API",
-          liveUrl: "https://google-translate-clone-reactjs.netlify.app/",
-          screenshot:"/projectImage/google-translate.png",
-          techStack: [["ReactJS", "RUST API", "AXIOS"]],
-        },
-        {
-          projectName: "Nike webpage clone",
-          description: "Clone webpage",
-          liveUrl: "https://athulsn10.github.io/Beki-parallax/",
-          screenshot: "/projectImage/beki.png",
-          techStack: [["HTML", "CSS"]],
-        },
-      ];
-  useEffect(() => {
-    console.log(projectData);
-  }, []);
+  const projectData = [
+    {
+      projectName: "Teachify",
+      description:
+        "MEAN Stack project where students of BSc CS under calicut university can access their notes",
+      liveUrl: "https://teachify-swart.vercel.app/",
+      screenshot: "/projectImage/teachify.png",
+      techStack: [["AngularJS", "NodeJS", "ExpressJS", "MongoDB"]],
+    },
+    {
+      projectName: "Chatify",
+      description:
+        "MERN Stack Chat Application utilizing Socket.IO for real time communication using websockets ",
+      liveUrl: "https://chatify-brown.vercel.app/",
+      screenshot: "/projectImage/chatify.png",
+      techStack: [["NodeJS", "ExpressJS", "MongoDB", "ReactJS", "Socket.io"]],
+    },
+    {
+      projectName: "Enigma Doc App",
+      description:
+        "React App for performing CRUD operations with Google's Firebase",
+      liveUrl: "https://enigma-doc-app.vercel.app/",
+      screenshot: "/projectImage/enigma.png",
+      techStack: [["ReactJS", "Firebase"]],
+    },
+    {
+      projectName: "Contact Manger",
+      description: "React App for CRUD operations with JSON Server",
+      liveUrl: "https://contact-manager-crud.vercel.app/",
+      screenshot: "/projectImage/contact-manager.png",
+      techStack: [["ReactJS", "JSON Server"]],
+    },
+    {
+      projectName: "Netflix Clone",
+      description: "Clone App of Netflix created using React",
+      liveUrl: "https://netflix-clone-reactjs-athul.netlify.app/",
+      screenshot: "/projectImage/netflix.png",
+      techStack: [["ReactJS", "RUST API", "AXIOS"]],
+    },
+    {
+      projectName: "Google Translate Clone",
+      description: "Google Translate clone using LibreTranslate API",
+      liveUrl: "https://google-translate-clone-reactjs.netlify.app/",
+      screenshot: "/projectImage/google-translate.png",
+      techStack: [["ReactJS", "RUST API", "AXIOS"]],
+    },
+    {
+      projectName: "Nike webpage clone",
+      description: "Clone webpage",
+      liveUrl: "https://athulsn10.github.io/Beki-parallax/",
+      screenshot: "/projectImage/beki.png",
+      techStack: [["HTML", "CSS"]],
+    },
+  ];
+
   return (
     <>
       <div className="d-flex justify-content-center align-items-center">
@@ -72,7 +69,7 @@ export default function Projects() {
               margin: "auto",
             }}
           >
-            {projectData.map((item:any) => (
+            {projectData.map((item: any) => (
               <div
                 className="m-2 project-card"
                 style={{ width: "300px", flex: "0 0 auto" }}
@@ -88,7 +85,7 @@ export default function Projects() {
                     <p className="card-title overflow-hidden fw-bold urbanist">
                       {item.projectName}
                     </p>
-                    <p className="card-text urbanist-light" style={{fontSize:'14px'}}>{item.description}</p>
+                    <p className="card-text urbanist-light" style={{ fontSize: '14px' }}>{item.description}</p>
                     <a
                       href={item.liveUrl}
                       target="_blank"
@@ -96,11 +93,11 @@ export default function Projects() {
                       style={{ textDecoration: "none", color: "#ffffff" }}
                     >
                       <button
-                       style={{ cursor:"none" }}
+                        style={{ cursor: "none" }}
                         type="button"
                         className="rounded-pill w-100 d-flex justify-content-center align-items-center btn btn-dark"
                       >
-                        Visit Site<i className="fi ms-1 fi-bs-arrow-up-right" style={{fontSize:'12px'}}/>
+                        Visit Site<i className="fi ms-1 fi-bs-arrow-up-right" style={{ fontSize: '12px' }} />
                       </button>
                     </a>
                   </div>
