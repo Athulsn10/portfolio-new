@@ -25,19 +25,31 @@ const Experience: React.FC = () => {
   };
 
   useEffect(() => {
-    const inputMonth = 3;
-    const inputYear = 2024;
+    const inputMonth = 10;
+    const inputYear = 2025;
     const monthsSinceInput = dynamicDate(inputMonth, inputYear);
     setTotalMonth(monthsSinceInput);
   }, []);
 
   const items: ExperienceItem[] = [
     {
+      position: 'right',
+      children: (
+        <>
+          <p className='fw-bolder'>Software Engineer</p>
+          <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://whiterabbit.group/'>White Rabbit Group</a> · Full-time</p>
+          <p style={{ fontSize: '12px' }}>Oct 2025 - present · {totalMonth}</p>
+          <p style={{ fontSize: '12px' }}>Kochi, Kerala, India · On-site</p>
+        </>
+      ),
+    },
+    {
+      position: 'left',
       children: (
         <>
           <p className='fw-bolder'>Software Engineer</p>
           <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://panapps.co/'>Panapps  International Pvt Ltd</a> · Full-time</p>
-          <p style={{ fontSize: '12px' }}>Mar 2024 - present · {totalMonth}</p>
+          <p style={{ fontSize: '12px' }}>Mar 2024 - Sept 2025 · 1 yr 6 mos</p>
           <p style={{ fontSize: '12px' }}>Kochi, Kerala, India · Remote</p>
         </>
       ),
@@ -60,7 +72,7 @@ const Experience: React.FC = () => {
           <p className='fw-bolder'>MEARN Intern</p>
           <p style={{ fontSize: '12px' }}><a className='social-link' target='_blank' href='https://www.luminartechnolab.com/'>Luminar Technolab</a> · Full-time</p>
           <p style={{ fontSize: '12px' }}>Jun 2023 - Dec 2023 · 7 mos</p>
-          <p style={{ fontSize: '12px' }}>Ernakulam, Kerala, India · Remote</p>
+          <p style={{ fontSize: '12px' }}>Kochi, Kerala, India · Remote</p>
         </>
       ),
     },
