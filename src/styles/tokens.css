@@ -1,0 +1,48 @@
+:root {
+  --ink-900: #0a0a0b;
+  --ink-800: #101012;
+  --ink-700: #16161a;
+  --ink-600: #1e1e23;
+
+  --line: rgba(244, 241, 236, 0.1);
+  --line-strong: rgba(244, 241, 236, 0.22);
+
+  --bone: #f4f1ec;
+  --bone-60: rgba(244, 241, 236, 0.72);
+  --bone-40: rgba(244, 241, 236, 0.52);
+
+  --flame: #ff3b04;
+  --flame-tint: rgba(255, 59, 4, 0.14);
+  --pulse: #38d47f;
+
+  --font-display: "Bricolage Grotesque", "Urbanist", sans-serif;
+  --font-body: "Urbanist", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --t-hero: clamp(3.4rem, 12vw, 11rem);
+  --t-h1: clamp(2.4rem, 6.5vw, 5.5rem);
+  --t-h2: clamp(1.6rem, 3vw, 2.6rem);
+  --t-lead: clamp(1.05rem, 1.5vw, 1.5rem);
+  --t-body: clamp(0.98rem, 1.05vw, 1.075rem);
+  --t-label: 0.7rem;
+
+  --s-1: 8px;
+  --s-2: 16px;
+  --s-3: 24px;
+  --s-4: 40px;
+  --s-5: 64px;
+  --s-6: 96px;
+  --s-7: 160px;
+
+  --page-x: clamp(20px, 5vw, 80px);
+  --section-y: clamp(88px, 13vh, 190px);
+  --max-w: 1440px;
+  --header-h: 64px;
+
+  --r-sm: 2px;
+  --r-md: 14px;
+  --r-lg: 24px;
+  --r-pill: 999px;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
