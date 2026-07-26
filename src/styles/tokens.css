@@ -35,7 +35,8 @@
   --s-7: 160px;
 
   --page-x: clamp(20px, 5vw, 80px);
-  --section-y: clamp(88px, 13vh, 190px);
+  /* Shared by every <section>; adjacent sections stack top+bottom, so keep this measured. */
+  --section-y: clamp(72px, 10vh, 160px);
   --max-w: 1440px;
   --header-h: 64px;
 

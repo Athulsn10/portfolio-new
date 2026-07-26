@@ -510,6 +510,14 @@
 }
 
 @media (max-width: 1024px) {
+  :root {
+    --section-y: clamp(56px, 8vh, 96px);
+  }
+
+  .sec-head {
+    margin-bottom: var(--s-4);
+  }
+
   .about-grid,
   .skill-group {
     grid-template-columns: minmax(0, 1fr);
@@ -544,6 +552,15 @@
 }
 
 @media (max-width: 720px) {
+  :root {
+    /* Adjacent sections each pad top+bottom — keep the combined gap tight on phones. */
+    --section-y: clamp(40px, 6vh, 64px);
+  }
+
+  .sec-head {
+    margin-bottom: var(--s-3);
+  }
+
   .nav {
     display: none;
   }
