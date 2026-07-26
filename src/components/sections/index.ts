@@ -1,0 +1,10 @@
+export { default as Preloader } from "./Preloader";
+export { default as Header } from "./Header";
+export { default as Hero } from "./Hero";
+export { default as Marquee } from "./Marquee";
+export { default as AboutSection } from "./AboutSection";
+export { default as WorkSection } from "./WorkSection";
+export { default as ExperienceSection } from "./ExperienceSection";
+export { default as ToolkitSection } from "./ToolkitSection";
+export { default as ContactSection } from "./ContactSection";
+export { default as Footer } from "./Footer";

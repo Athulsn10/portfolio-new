@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Athul S Nair">
+  <rect width="32" height="32" rx="8" fill="#0a0a0b"/>
+
+  <!-- Bone A outline -->
+  <path
+    fill="#f4f1ec"
+    fill-rule="evenodd"
+    d="M16 3.8 29 28.2H23.4L20.9 22.4H11.1L8.6 28.2H3L16 3.8Zm0 7.4-3.55 8.1h7.1L16 11.2Z"
+  />
+
+  <!-- Flame-filled counter — unique brand cut -->
+  <path fill="#ff3b04" d="M16 12.6 19.1 19.7h-6.2L16 12.6Z"/>
+
+  <!-- Header wordmark pip -->
+  <circle cx="25.8" cy="6.4" r="2.15" fill="#ff3b04"/>
+</svg>
