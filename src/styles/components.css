@@ -152,7 +152,7 @@
 .btn--flame {
   background: var(--flame);
   border-color: var(--flame);
-  color: #fff;
+  color: var(--ink-900); /* white on flame is 3.6:1, fails AA */
 }
 
 .btn--flame:hover {

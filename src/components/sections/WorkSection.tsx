@@ -39,6 +39,7 @@ export default function WorkSection() {
             <span className="work-arrow" aria-hidden="true">
               ↗
             </span>
+            <span className="sr-only"> (opens in new tab)</span>
           </a>
         ))}
       </div>

@@ -8,11 +8,11 @@ export default function ContactSection() {
         <p className="label label--flame" data-fade>
           {site.contact.index}
         </p>
-        <h2>
-          <span className="mask">
+        <h2 aria-label={site.contact.heading.join(" ")}>
+          <span className="mask" aria-hidden="true">
             <span data-split>{site.contact.heading[0]}</span>
           </span>
-          <span className="mask">
+          <span className="mask" aria-hidden="true">
             <span data-split className="outline">
               {site.contact.heading[1]}
             </span>
@@ -26,7 +26,7 @@ export default function ContactSection() {
         <div className="socials">
           {site.socials.map((social) => (
             <ButtonLink key={social.id} href={social.href} external>
-              {social.label} ↗
+              {social.label} <span aria-hidden="true">↗</span>
             </ButtonLink>
           ))}
           <ButtonLink
@@ -34,7 +34,8 @@ export default function ContactSection() {
             download={site.resume.downloadName}
             variant="flame"
           >
-            Download résumé ↓
+            Download résumé <span className="sr-only">(PDF, 164 KB)</span>
+            <span aria-hidden="true">↓</span>
           </ButtonLink>
         </div>
       </div>

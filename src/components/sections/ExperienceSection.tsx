@@ -36,6 +36,7 @@ export default function ExperienceSection() {
                   rel="noopener noreferrer"
                 >
                   {role.company}
+                  <span className="sr-only"> (opens in new tab)</span>
                 </a>{" "}
                 · {role.employmentType}
               </p>

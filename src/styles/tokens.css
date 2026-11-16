@@ -24,7 +24,7 @@
   --t-h2: clamp(1.6rem, 3vw, 2.6rem);
   --t-lead: clamp(1.05rem, 1.5vw, 1.5rem);
   --t-body: clamp(0.98rem, 1.05vw, 1.075rem);
-  --t-label: 0.7rem;
+  --t-label: 0.75rem;
 
   --s-1: 8px;
   --s-2: 16px;
