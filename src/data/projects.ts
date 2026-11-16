@@ -11,6 +11,18 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "glance-kit",
+    name: "Glance Kit",
+    description:
+      "Minimal Android home screen widgets for day progress, steps, battery, data, focus and live sky, plus a compass, spirit level and barometer.",
+    outcome:
+      "Reads everything on-device: no accounts, no sign-in, no internet access.",
+    liveUrl: "https://athulsn10.github.io/glance-kit/",
+    screenshot: "/projectImage/glance-kit.webp",
+    techStack: ["Kotlin", "Android", "WorkManager", "Coroutines"],
+    featured: true,
+  },
+  {
     id: "teachify",
     name: "Teachify",
     description:
