@@ -29,7 +29,7 @@ export default function Footer() {
           {site.footer.timezoneLabel}
         </p>
         <a className="label" href="#top">
-          Back to top ↑
+          Back to top <span aria-hidden="true">↑</span>
         </a>
       </div>
     </footer>

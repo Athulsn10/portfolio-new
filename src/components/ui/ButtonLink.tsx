@@ -38,6 +38,7 @@ export default function ButtonLink({
         : {})}
     >
       {children}
+      {external ? <span className="sr-only"> (opens in new tab)</span> : null}
     </a>
   );
 }

@@ -25,7 +25,12 @@ function waitForFonts() {
 
 function toChars(el: Element): Element[] {
   try {
-    return SplitText.create(el, { type: "chars", charsClass: "ch" }).chars;
+    return SplitText.create(el, {
+      type: "chars",
+      charsClass: "ch",
+      // Headings carry their own aria-label; "auto" would put one on a <span>.
+      aria: "none",
+    }).chars;
   } catch {
     const text = el.textContent ?? "";
     el.textContent = "";
@@ -46,6 +51,8 @@ function toLines(el: Element): Element[] {
       type: "lines",
       linesClass: "ln",
       mask: "lines",
+      // Lines keep whole words, so screen readers read them fine unlabelled.
+      aria: "none",
     }).lines;
   } catch {
     return [el];
@@ -59,6 +66,15 @@ function playIntro(root: HTMLElement, reduce: boolean) {
   const countEl = root.querySelector<HTMLElement>("#loader-count");
   if (!loader || !loaderBar || !countEl) return;
 
+  // Loader delays LCP, so only show it once per browser session.
+  let seen = false;
+  try {
+    seen = sessionStorage.getItem("intro-seen") === "1";
+  } catch {
+    // Storage blocked (private mode etc.) — just play the loader.
+  }
+  const dl = (n: number) => (reduce || seen ? 0 : n);
+
   // Reset in case Strict Mode remounted mid-animation.
   gsap.set(loader, { clearProps: "all", display: "flex", yPercent: 0 });
   gsap.set(loaderBar, { scaleX: 0 });
@@ -67,12 +83,12 @@ function playIntro(root: HTMLElement, reduce: boolean) {
   const counter = { v: 0 };
   const tl = gsap.timeline();
 
-  tl.to(loaderBar, { scaleX: 1, duration: d(1.1), ease: "power2.inOut" }, 0)
+  tl.to(loaderBar, { scaleX: 1, duration: dl(1.1), ease: "power2.inOut" }, 0)
     .to(
       counter,
       {
         v: 100,
-        duration: d(1.1),
+        duration: dl(1.1),
         ease: "power2.inOut",
         onUpdate: () => {
           countEl.textContent = String(Math.round(counter.v));
@@ -82,10 +98,17 @@ function playIntro(root: HTMLElement, reduce: boolean) {
     )
     .to(
       loader,
-      { yPercent: -100, duration: d(1), ease: "power4.inOut" },
-      "+=0.15",
+      { yPercent: -100, duration: dl(1), ease: "power4.inOut" },
+      seen ? ">" : "+=0.15",
     )
-    .set(loader, { display: "none" });
+    .set(loader, { display: "none" })
+    .call(() => {
+      try {
+        sessionStorage.setItem("intro-seen", "1");
+      } catch {
+        // ignore
+      }
+    });
 
   const heroTl = gsap.timeline();
   root.querySelectorAll(".hero [data-split]").forEach((el, i) => {
@@ -133,7 +156,7 @@ function playIntro(root: HTMLElement, reduce: boolean) {
       0.5,
     );
 
-  tl.add(heroTl, ">-0.35");
+  tl.add(heroTl, seen ? 0 : ">-0.35");
 
   const cue = root.querySelector("#cue-arrow");
   if (cue && !reduce) {

@@ -20,7 +20,8 @@ export default function Header() {
           download={site.resume.downloadName}
           size="sm"
         >
-          {site.resume.label}
+          {site.resume.label} <span aria-hidden="true">↓</span>
+          <span className="sr-only"> (PDF)</span>
         </ButtonLink>
       </div>
     </header>

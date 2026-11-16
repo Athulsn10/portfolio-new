@@ -70,14 +70,14 @@ export const site: SiteContent = {
   location: "Kochi, India",
   availability: "Open to opportunities",
   portrait: {
-    src: "/images/athul.jpg",
+    src: "/images/athul.webp",
     alt: "Portrait of Athul S Nair",
     captionYear: "2026",
   },
   resume: {
-    href: "/resume/ATHUL S NAIR _RESUME.pdf",
-    downloadName: "ATHUL S NAIR _RESUME.pdf",
-    label: "Resume ↓",
+    href: "/resume/athul-s-nair-resume.pdf",
+    downloadName: "athul-s-nair-resume.pdf",
+    label: "Resume",
   },
   hero: {
     leadBefore: "I build ",

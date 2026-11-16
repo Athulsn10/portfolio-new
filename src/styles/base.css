@@ -79,7 +79,7 @@ h3 {
   z-index: 200;
   padding: 10px 16px;
   background: var(--flame);
-  color: #fff;
+  color: var(--ink-900);
   font-family: var(--font-mono);
   font-size: 0.75rem;
   border-radius: var(--r-sm);

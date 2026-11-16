@@ -15,11 +15,11 @@ export default function Hero() {
 
       <div className="hero-grid">
         <div>
-          <h1 className="hero-name">
-            <span className="mask">
+          <h1 className="hero-name" aria-label={site.name}>
+            <span className="mask" aria-hidden="true">
               <span data-split>{site.shortName}</span>
             </span>
-            <span className="mask">
+            <span className="mask" aria-hidden="true">
               <span data-split className="outline">
                 S Nair
               </span>
@@ -59,7 +59,7 @@ export default function Hero() {
       <div className="hero-foot">
         <p className="label scroll-cue">
           <span>{site.hero.scrollCue}</span>
-          <span id="cue-arrow">↓</span>
+          <span id="cue-arrow" aria-hidden="true">↓</span>
         </p>
         <p className="label">{site.hero.footNote}</p>
       </div>
