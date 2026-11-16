@@ -29,8 +29,11 @@ export const experience: ExperienceRole[] = [
     end: "present",
     location: "Kochi, India · On-site",
     bullets: [
-      "Built and maintained CMS and commerce experiences across WordPress, Craft CMS, Shopify, and HubSpot.",
-      "Developed production interfaces with Next.js, React, Vue 2 and Vue 3.",
+      "Engineered and maintained production websites and commerce platforms across WordPress, Drupal, Craft CMS, Shopify and HubSpot for international clients in tourism, education and nonprofit sectors.",
+      "Developed responsive, component-driven front-end interfaces using Next.js, React, Vue 2 and Vue 3, integrated with headless and traditional CMS back ends.",
+      "Architected an AI-assisted Figma-to-Drupal content automation tool (Node.js, React, Anthropic Claude API, Playwright) that uses LLM-based field mapping to reduce manual CMS data entry.",
+      "Drove adoption of AI-assisted development workflows within the team to speed up delivery and reduce repetitive engineering work.",
+      "Worked directly with international clients and project managers through requirements analysis, QA and release cycles in an Agile delivery setup.",
     ],
     highlight: true,
   },
