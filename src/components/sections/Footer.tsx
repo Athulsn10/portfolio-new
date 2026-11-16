@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="shell footer-inner">
         <p className="label">{site.footer.copyright}</p>
         <p className="label">
-          {site.location} — <span id="clock">{time}</span>{" "}
+          {site.location} · <span id="clock">{time}</span>{" "}
           {site.footer.timezoneLabel}
         </p>
         <a className="label" href="#top">

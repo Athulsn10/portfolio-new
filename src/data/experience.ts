@@ -31,7 +31,7 @@ export const experience: ExperienceRole[] = [
     bullets: [
       "Engineered and maintained production websites and commerce platforms across WordPress, Drupal, Craft CMS, Shopify and HubSpot for international clients in tourism, education and nonprofit sectors.",
       "Developed responsive, component-driven front-end interfaces using Next.js, React, Vue 2 and Vue 3, integrated with headless and traditional CMS back ends.",
-      "Architected an AI-assisted Figma-to-Drupal content automation tool (Node.js, React, Anthropic Claude API, Playwright) that uses LLM-based field mapping to reduce manual CMS data entry.",
+      "Building internal automation tools with Node.js, the Anthropic Claude API and Playwright to cut repetitive content and QA work across the organisation.",
       "Drove adoption of AI-assisted development workflows within the team to speed up delivery and reduce repetitive engineering work.",
       "Worked directly with international clients and project managers through requirements analysis, QA and release cycles in an Agile delivery setup.",
     ],
@@ -53,6 +53,7 @@ export const experience: ExperienceRole[] = [
       "Built and shipped full-stack features for client products, with front ends in Vue 2 and Vue 3.",
       "Maintained and refactored legacy code bases, fixing bugs and keeping production apps stable.",
       "Created and prepared datasets, and trained machine-learning models with PyTorch.",
+      "Built reusable Vue components shared across projects, and integrated front ends with REST APIs alongside back-end developers.",
     ],
   },
   {
@@ -70,6 +71,7 @@ export const experience: ExperienceRole[] = [
     bullets: [
       "Trained in Vue 3 and C# as part of the engineering onboarding programme.",
       "Built several MVPs during training, taking each from idea to working demo.",
+      "Took part in code reviews with senior engineers and learned the team's Git and release workflow.",
     ],
   },
   {
@@ -84,6 +86,10 @@ export const experience: ExperienceRole[] = [
     start: { month: 6, year: 2023 },
     end: { month: 12, year: 2023 },
     location: "Remote",
+    bullets: [
+      "Built full-stack MERN projects from scratch, covering REST APIs, authentication and MongoDB data models.",
+      "Deployed apps to Vercel and Netlify, and debugged issues that only showed up in production.",
+    ],
   },
 ];
 

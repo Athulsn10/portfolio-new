@@ -46,7 +46,7 @@ export default function WorkSection() {
 
       <div className="work-foot">
         {archivedProjects.length > 0 ? (
-          <p className="label">{archivedLabel} — archived</p>
+          <p className="label">Archived: {archivedLabel}</p>
         ) : (
           <span />
         )}

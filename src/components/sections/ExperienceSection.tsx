@@ -2,7 +2,7 @@ import { experience, formatTenure } from "../../data";
 import SectionHeader from "../ui/SectionHeader";
 
 function roleDateLabel(role: (typeof experience)[number]): string {
-  const base = `${role.startLabel} — ${role.endLabel}`;
+  const base = `${role.startLabel} – ${role.endLabel}`;
 
   if (role.end === "present") {
     return `${base} · ${formatTenure(role.start.month, role.start.year)}`;
