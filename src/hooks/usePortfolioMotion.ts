@@ -25,7 +25,12 @@ function waitForFonts() {
 
 function toChars(el: Element): Element[] {
   try {
-    return SplitText.create(el, { type: "chars", charsClass: "ch" }).chars;
+    return SplitText.create(el, {
+      type: "chars",
+      charsClass: "ch",
+      // Headings carry their own aria-label; "auto" would put one on a <span>.
+      aria: "none",
+    }).chars;
   } catch {
     const text = el.textContent ?? "";
     el.textContent = "";
@@ -46,6 +51,8 @@ function toLines(el: Element): Element[] {
       type: "lines",
       linesClass: "ln",
       mask: "lines",
+      // Lines keep whole words, so screen readers read them fine unlabelled.
+      aria: "none",
     }).lines;
   } catch {
     return [el];
