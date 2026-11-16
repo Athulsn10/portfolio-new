@@ -80,10 +80,10 @@ export const site: SiteContent = {
     label: "Resume",
   },
   hero: {
-    leadBefore: "I build ",
-    leadEmphasis: "fast, accessible web products",
+    leadBefore: "Software engineer building ",
+    leadEmphasis: "production web platforms",
     leadAfter:
-      " — currently shipping production interfaces at White Rabbit Group with React, TypeScript and Node.",
+      " with Next.js, React and TypeScript — and integrating AI into real development workflows. Currently at White Rabbit Group, delivering CMS and commerce solutions for international clients.",
     primaryCta: { label: "View selected work", href: "#work" },
     secondaryCta: { label: "Get in touch", href: "#contact" },
     scrollCue: "Scroll to explore",
@@ -93,9 +93,10 @@ export const site: SiteContent = {
     index: "01 / 05",
     asideLabel: "Background",
     paragraphs: [
-      "I'm a software engineer with a Computer Science background from the University of Calicut, specialised in the MERN stack.",
-      "My path started with an internship where I shipped and deployed my first real applications. Since then I've worked across product teams building interfaces that stay quick under load and readable under pressure.",
+      "I'm a software engineer with nearly three years of experience shipping production web applications, from MERN-stack products to multi-platform CMS and commerce builds. I studied Computer Science at the University of Calicut.",
+      "My path started with an internship where I shipped and deployed my first real applications. Since then I've worked across product and client delivery teams building interfaces that stay quick under load and readable under pressure.",
       "These days I care most about the boring parts that users actually feel — perceived performance, keyboard access, and layouts that don't fall apart on a small screen.",
+      "Lately I've been building AI-assisted tooling that removes repetitive work from content and development pipelines.",
     ],
   },
   contact: {
@@ -104,17 +105,21 @@ export const site: SiteContent = {
     email: "athulsn32@gmail.com",
   },
   marquee: [
+    "nextjs",
     "react",
     "typescript",
     "node",
-    "angular",
+    "llm",
+    "playwright",
     "vue",
     "express",
     "mongodb",
+    "drupal",
     "wordpress",
     "craftcms",
     "shopify",
     "hubspot",
+    "angular",
   ],
   navigation: [
     { id: "about", label: "About", href: "#about" },
@@ -134,17 +139,12 @@ export const site: SiteContent = {
       label: "LinkedIn",
       href: "https://www.linkedin.com/in/athul-nair123/",
     },
-    {
-      id: "instagram",
-      label: "Instagram",
-      href: "https://www.instagram.com/_athul.s.nair/",
-    },
   ],
   githubProfile: "https://github.com/Athulsn10",
   seo: {
-    title: "Athul S Nair — Software Engineer",
+    title: "Athul S Nair — Software Engineer in Kochi | Next.js, React & AI",
     description:
-      "Software engineer based in Kochi, India. Building fast, accessible web products with React, TypeScript, and Node.",
+      "Kochi-based software engineer building production web platforms with Next.js, React and TypeScript, and integrating AI into real development workflows.",
     url: "https://portfolio-athul.vercel.app/",
   },
   footer: {

@@ -49,6 +49,11 @@ export const experience: ExperienceRole[] = [
     start: { month: 3, year: 2024 },
     end: { month: 9, year: 2025 },
     location: "Kochi, India · Remote",
+    bullets: [
+      "Built and shipped full-stack features for client products, with front ends in Vue 2 and Vue 3.",
+      "Maintained and refactored legacy code bases, fixing bugs and keeping production apps stable.",
+      "Created and prepared datasets, and trained machine-learning models with PyTorch.",
+    ],
   },
   {
     id: "panapps-intern",
@@ -62,6 +67,10 @@ export const experience: ExperienceRole[] = [
     start: { month: 1, year: 2024 },
     end: { month: 3, year: 2024 },
     location: "Remote",
+    bullets: [
+      "Trained in Vue 3 and C# as part of the engineering onboarding programme.",
+      "Built several MVPs during training, taking each from idea to working demo.",
+    ],
   },
   {
     id: "luminar-intern",

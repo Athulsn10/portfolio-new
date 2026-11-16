@@ -27,6 +27,8 @@ export const projects: Project[] = [
     name: "Teachify",
     description:
       "A notes platform where BSc CS students under Calicut University find and share course material.",
+    outcome:
+      "Solves notes being scattered across many places by putting them in one searchable library.",
     liveUrl: "https://teachify-swart.vercel.app/",
     screenshot: "/projectImage/teachify.webp",
     techStack: ["Angular", "Node.js", "Express", "MongoDB"],
@@ -36,7 +38,9 @@ export const projects: Project[] = [
     id: "chatify",
     name: "Chatify",
     description:
-      "Real-time chat over WebSockets, with Socket.IO handling presence and instant message delivery.",
+      "Real-time chat app with instant messaging over WebSockets.",
+    outcome:
+      "Handles presence and message delivery for concurrent users over Socket.IO.",
     liveUrl: "https://chatify-brown.vercel.app/",
     screenshot: "/projectImage/chatify.webp",
     techStack: ["React", "Socket.IO", "Express", "MongoDB"],
@@ -50,7 +54,7 @@ export const projects: Project[] = [
     liveUrl: "https://enigma-doc-app.vercel.app/",
     screenshot: "/projectImage/enigma.webp",
     techStack: ["React", "Firebase"],
-    featured: true,
+    featured: false,
   },
   {
     id: "contact-manager",
@@ -60,7 +64,7 @@ export const projects: Project[] = [
     liveUrl: "https://contact-manager-crud.vercel.app/",
     screenshot: "/projectImage/contact-manager.webp",
     techStack: ["React", "JSON Server"],
-    featured: true,
+    featured: false,
   },
   {
     id: "netflix-clone",

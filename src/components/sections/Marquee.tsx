@@ -10,7 +10,7 @@ export default function Marquee() {
       <div className="marquee-track" id="marquee">
         {items.map((id, index) => (
           <span className="marquee-item" key={`${id}-${index}`}>
-            <BrandLogo id={id} />
+            {brandLogos[id].path ? <BrandLogo id={id} /> : null}
             <span className="marquee-label">{brandLogos[id].title}</span>
           </span>
         ))}
