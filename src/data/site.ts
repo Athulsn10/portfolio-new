@@ -70,7 +70,7 @@ export const site: SiteContent = {
   location: "Kochi, India",
   availability: "Open to opportunities",
   portrait: {
-    src: "/images/athul.webp",
+    src: "/images/athul.webp?v=2",
     alt: "Portrait of Athul S Nair",
     captionYear: "2026",
   },
